@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Dashboard — Análisis de Sentimiento</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; background:#f5f7fb; color:#111; }
+  h2 { margin-top:0; }
+  .container { max-width: 1200px; margin: 20px auto; padding: 10px; display: grid; gap: 20px; grid-template-columns: 1fr 1fr; }
+  .card { background: #fff; border-radius: 10px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  .full { grid-column: 1 / -1; }
+  canvas { width:100% !important; height:300px !important; }
+  table { width:100%; border-collapse: collapse; font-size:13px; }
+  th, td { border-bottom:1px solid #eee; padding:6px; text-align:left; }
+  th { background:#fafafa; }
+</style>
+</head>
+<body>
+  <h1 style="text-align:center; padding:10px 0;">Dashboard — Análisis de Sentimiento, Colocaciones y Entidades</h1>
+
+  <div class="container">
+    <div class="card">
+      <h2>Análisis de Sentimiento</h2>
+      <canvas id="sentimentChart"></canvas>
+      <div id="sentimentSummary"></div>
+    </div>
+
+    <div class="card">
+      <h2>Colocaciones Principales</h2>
+      <canvas id="collocChart"></canvas>
+      <table id="collocTable"><thead><tr><th>Colocación</th><th>Frecuencia</th><th>Relevancia</th></tr></thead><tbody></tbody></table>
+    </div>
+
+    <div class="card full">
+      <h2>Entidades Relevantes</h2>
+      <table id="entityTable"><thead><tr><th>Entidad</th><th>Tipo</th><th>Relevancia</th></tr></thead><tbody></tbody></table>
+    </div>
+  </div>
+
+<script>
+async function init() {
+  try {
+    const response = await fetch('result.json');
+    const data = await response.json();
+
+    // === Sentimiento ===
+    const s = data.sentiment_analysis.sentiment_breakdown;
+    const labels = Object.keys(s);
+    const values = Object.values(s);
+
+    new Chart(document.getElementById('sentimentChart'), {
+      type: 'pie',
+      data: { labels, datasets: [{ data: values, backgroundColor:['#16a34a','#ef4444','#f59e0b'] }] },
+      options: { plugins:{ legend:{ position:'bottom' } } }
+    });
+
+    document.getElementById('sentimentSummary').innerHTML =
+      `<p><strong>Sentimiento general:</strong> ${data.sentiment_analysis.overall_sentiment}</p>`;
+
+    // === Colocaciones ===
+    const collocs = data.collocation_analysis.top_collocations;
+    const collocLabels = collocs.map(c=>c.collocation);
+    const collocFreq = collocs.map(c=>c.frequency);
+
+    new Chart(document.getElementById('collocChart'), {
+      type:'bar',
+      data:{ labels: collocLabels, datasets:[{label:'Frecuencia', data:collocFreq, backgroundColor:'#3b82f6'}]},
+      options:{indexAxis:'y', plugins:{legend:{display:false}}}
+    });
+
+    document.querySelector('#collocTable tbody').innerHTML =
+      collocs.map(c=>`<tr><td>${c.collocation}</td><td>${c.frequency}</td><td>${c.relevance}</td></tr>`).join('');
+
+    // === Entidades ===
+    const ents = data.entity_detection.relevant_entities;
+    document.querySelector('#entityTable tbody').innerHTML =
+      ents.map(e=>`<tr><td>${e.entity}</td><td>${e.type}</td><td>${e.relevance}</td></tr>`).join('');
+
+  } catch (e) {
+    console.error('Error cargando datos:', e);
+    document.body.innerHTML += '<p style="color:red;text-align:center;">Error al cargar el archivo result.json. Asegúrate de que esté en la misma carpeta.</p>';
+  }
+}
+
+init();
+</script>
+</body>
+</html>
