@@ -1,0 +1,696 @@
+{
+    "describe_matrix": {
+        "count": {
+            "favorite_count": 1198.0,
+            "id": 1199.0,
+            "retweet_count": 1198.0,
+            "user.followers_count": 1198.0,
+            "user.friends_count": 1198.0
+        },
+        "mean": {
+            "favorite_count": 12.202003338898164,
+            "id": 1.1909482828284088e+18,
+            "retweet_count": 33.925709515859765,
+            "user.followers_count": 5046.368948247078,
+            "user.friends_count": 1021.626878130217
+        },
+        "std": {
+            "favorite_count": 104.53245995361105,
+            "id": 3.4425044120617452e+16,
+            "retweet_count": 815.0630495614117,
+            "user.followers_count": 72793.23507864912,
+            "user.friends_count": 6446.56499792927
+        },
+        "min": {
+            "favorite_count": 0.0,
+            "id": 167.0,
+            "retweet_count": 0.0,
+            "user.followers_count": 1.0,
+            "user.friends_count": 0.0
+        },
+        "25%": {
+            "favorite_count": 0.0,
+            "id": 1.1918218393786122e+18,
+            "retweet_count": 0.0,
+            "user.followers_count": 186.5,
+            "user.friends_count": 262.0
+        },
+        "50%": {
+            "favorite_count": 0.0,
+            "id": 1.191929775016874e+18,
+            "retweet_count": 0.0,
+            "user.followers_count": 483.0,
+            "user.friends_count": 532.5
+        },
+        "75%": {
+            "favorite_count": 2.0,
+            "id": 1.192133212113404e+18,
+            "retweet_count": 1.0,
+            "user.followers_count": 1377.25,
+            "user.friends_count": 992.75
+        },
+        "max": {
+            "favorite_count": 2733.0,
+            "id": 1.192608404327547e+18,
+            "retweet_count": 28090.0,
+            "user.followers_count": 1997889.0,
+            "user.friends_count": 221536.0
+        }
+    },
+    "corr_matrix": {
+        "user.followers_count": {
+            "user.followers_count": 1.0,
+            "user.friends_count": 0.5770596319321523,
+            "id": -0.14474055631145605,
+            "favorite_count": 0.3743598815158741,
+            "retweet_count": 0.1283469079000893
+        },
+        "user.friends_count": {
+            "user.followers_count": 0.5770596319321523,
+            "user.friends_count": 1.0,
+            "id": -0.09306009552025668,
+            "favorite_count": 0.16383723344715007,
+            "retweet_count": 0.05420889555106655
+        },
+        "id": {
+            "user.followers_count": -0.14474055631145605,
+            "user.friends_count": -0.09306009552025668,
+            "id": 1.0,
+            "favorite_count": -0.1278758415977603,
+            "retweet_count": 0.07590999064439975
+        },
+        "favorite_count": {
+            "user.followers_count": 0.3743598815158741,
+            "user.friends_count": 0.16383723344715007,
+            "id": -0.1278758415977603,
+            "favorite_count": 1.0,
+            "retweet_count": 0.1210178774154952
+        },
+        "retweet_count": {
+            "user.followers_count": 0.1283469079000893,
+            "user.friends_count": 0.05420889555106655,
+            "id": 0.07590999064439975,
+            "favorite_count": 0.1210178774154952,
+            "retweet_count": 1.0
+        }
+    },
+    "engagement_matrix": {
+        "text": {
+            "33": "@Cesar_Antonio_F @LivePalestina @Jou_Kaiser @tere_marinovic @elvillegaschile @sergioulloa1 @German69738375\u2026 https://t.co/0mgrQNJVrU",
+            "3276": "@dearc26 @eluniversocom Q insoportable estas personas resentidas. Viven amargados! Hay gustos y gustos. El bol\u00f3n de Tere es rico!",
+            "3738": "Se acab\u00f3 el chisme con el #closetdedav y ahora leo twists del #cafedetere... qu\u00e9 tiro guayaquile\u00f1os todo bien en casa?",
+            "2198": "@KaritoSoBsc Oe oe oe bien recuerdo que una vez twitteaste qu\u00e9 m\u00e1s barato Te sal\u00eda comprar un departamento en salin\u2026 https://t.co/FL0MGZv9Hx",
+            "1951": "La se\u00f1ora del caf\u00e9 d Tere es la prueba de q trabajando duro se puede llegar a rico. Ella ha demostrado q no es nece\u2026 https://t.co/JMNbFy5KLS",
+            "3608": "Cuando trabajaba en el parque Col\u00f3n una vez quise ir al #cafedetere que hay ah\u00ed vi los precios y me parecieron dema\u2026 https://t.co/LP8o8NIHU6",
+            "3992": "@ornella_soriano @_SantinoBoy @CafedeTere Que comentario tan regionalista... cabeza hueca que piensa que en la sier\u2026 https://t.co/cWBukqR7EM",
+            "3457": "@tere_marinovic En esta crisis, no hay buenos ni malos, se enfrentan entre chilenos, padres y familias. Y todo este\u2026 https://t.co/CQsnaeEs8Z",
+            "2148": "Si el cafe de tere te parece que es caro, turro y puro mkt anda busca otro bolon chtm\nEl ecuatoriano pr\u00f3spero tiene\u2026 https://t.co/APCz649NbZ",
+            "932": "Soy cliente regular del Caf\u00e9 de Tere. Ahora bien, que sig\u00e1 sin aceptar tarjetas de cr\u00e9dito es indefendible. Do\u00f1a Te\u2026 https://t.co/jHdbRXcdfa"
+        },
+        "favorite_count": {
+            "33": 10.0,
+            "3276": 79.0,
+            "3738": 10.0,
+            "2198": 46.0,
+            "1951": 332.0,
+            "3608": 1.0,
+            "3992": 1.0,
+            "3457": 7.0,
+            "2148": 187.0,
+            "932": 130.0
+        },
+        "retweet_count": {
+            "33": 1.0,
+            "3276": 1.0,
+            "3738": 3.0,
+            "2198": 3.0,
+            "1951": 81.0,
+            "3608": 0.0,
+            "3992": 0.0,
+            "3457": 3.0,
+            "2148": 63.0,
+            "932": 35.0
+        },
+        "total_engagement": {
+            "33": 250.0,
+            "3276": 86.81318681318682,
+            "3738": 66.66666666666666,
+            "2198": 63.888888888888886,
+            "1951": 61.141804788213626,
+            "3608": 33.33333333333333,
+            "3992": 33.33333333333333,
+            "3457": 19.444444444444446,
+            "2148": 15.583333333333332,
+            "932": 13.30603889457523
+        }
+    },
+    "heatmap": {
+        "Monday": {
+            "0.0": -1.0,
+            "1.0": 0.0,
+            "2.0": -1.0,
+            "3.0": 0.0,
+            "4.0": -1.0,
+            "5.0": -1.0,
+            "6.0": -1.0,
+            "7.0": 0.0,
+            "8.0": -1.0,
+            "9.0": 0.0,
+            "10.0": -1.0,
+            "11.0": 0.0,
+            "12.0": -1.0,
+            "13.0": -1.0,
+            "14.0": 1.0,
+            "15.0": 1.0,
+            "16.0": 3.0,
+            "17.0": 177.0,
+            "18.0": -1.0,
+            "19.0": -1.0,
+            "20.0": -1.0,
+            "21.0": -1.0,
+            "22.0": 2734.0,
+            "23.0": 82.0
+        },
+        "Tuesday": {
+            "0.0": 1.0,
+            "1.0": 32.0,
+            "2.0": 20.0,
+            "3.0": 0.0,
+            "4.0": 3.0,
+            "5.0": -1.0,
+            "6.0": -1.0,
+            "7.0": 1.0,
+            "8.0": -1.0,
+            "9.0": 0.0,
+            "10.0": -1.0,
+            "11.0": 1.0,
+            "12.0": 3.0,
+            "13.0": 73.0,
+            "14.0": 195.0,
+            "15.0": 18.0,
+            "16.0": 175.0,
+            "17.0": 102.0,
+            "18.0": 1012.0,
+            "19.0": 651.0,
+            "20.0": 210.0,
+            "21.0": 412.0,
+            "22.0": 1555.0,
+            "23.0": 1331.0
+        },
+        "Wednesday": {
+            "0.0": 209.0,
+            "1.0": 906.0,
+            "2.0": 1789.0,
+            "3.0": 895.0,
+            "4.0": 265.0,
+            "5.0": 37.0,
+            "6.0": 27.0,
+            "7.0": 31.0,
+            "8.0": 37.0,
+            "9.0": 4.0,
+            "10.0": 12.0,
+            "11.0": 64.0,
+            "12.0": 46.0,
+            "13.0": 115.0,
+            "14.0": 98.0,
+            "15.0": 76.0,
+            "16.0": 36.0,
+            "17.0": 160.0,
+            "18.0": 24.0,
+            "19.0": 34.0,
+            "20.0": 22.0,
+            "21.0": 282.0,
+            "22.0": 65.0,
+            "23.0": 83.0
+        },
+        "Thursday": {
+            "0.0": 37.0,
+            "1.0": 104.0,
+            "2.0": 40.0,
+            "3.0": 10.0,
+            "4.0": 15.0,
+            "5.0": 8.0,
+            "6.0": 0.0,
+            "7.0": 0.0,
+            "8.0": -1.0,
+            "9.0": 0.0,
+            "10.0": 0.0,
+            "11.0": 1.0,
+            "12.0": 17.0,
+            "13.0": 5.0,
+            "14.0": 1.0,
+            "15.0": 3.0,
+            "16.0": 57.0,
+            "17.0": 29.0,
+            "18.0": 10.0,
+            "19.0": 1.0,
+            "20.0": 16.0,
+            "21.0": 1.0,
+            "22.0": 1.0,
+            "23.0": 100.0
+        },
+        "Friday": {
+            "0.0": 5.0,
+            "1.0": 0.0,
+            "2.0": -1.0,
+            "3.0": -1.0,
+            "4.0": -1.0,
+            "5.0": -1.0,
+            "6.0": -1.0,
+            "7.0": -1.0,
+            "8.0": -1.0,
+            "9.0": -1.0,
+            "10.0": -1.0,
+            "11.0": -1.0,
+            "12.0": -1.0,
+            "13.0": -1.0,
+            "14.0": 8.0,
+            "15.0": -1.0,
+            "16.0": -1.0,
+            "17.0": -1.0,
+            "18.0": -1.0,
+            "19.0": -1.0,
+            "20.0": -1.0,
+            "21.0": -1.0,
+            "22.0": -1.0,
+            "23.0": -1.0
+        },
+        "Saturday": {
+            "0.0": 5.0,
+            "1.0": -1.0,
+            "2.0": -1.0,
+            "3.0": -1.0,
+            "4.0": -1.0,
+            "5.0": -1.0,
+            "6.0": -1.0,
+            "7.0": -1.0,
+            "8.0": -1.0,
+            "9.0": -1.0,
+            "10.0": 11.0,
+            "11.0": -1.0,
+            "12.0": -1.0,
+            "13.0": 0.0,
+            "14.0": 0.0,
+            "15.0": 5.0,
+            "16.0": 2.0,
+            "17.0": 8.0,
+            "18.0": -1.0,
+            "19.0": -1.0,
+            "20.0": -1.0,
+            "21.0": 0.0,
+            "22.0": -1.0,
+            "23.0": -1.0
+        },
+        "Sunday": {
+            "0.0": -1.0,
+            "1.0": 0.0,
+            "2.0": -1.0,
+            "3.0": -1.0,
+            "4.0": -1.0,
+            "5.0": -1.0,
+            "6.0": -1.0,
+            "7.0": -1.0,
+            "8.0": -1.0,
+            "9.0": -1.0,
+            "10.0": -1.0,
+            "11.0": -1.0,
+            "12.0": -1.0,
+            "13.0": 7.0,
+            "14.0": -1.0,
+            "15.0": 0.0,
+            "16.0": 0.0,
+            "17.0": -1.0,
+            "18.0": 1.0,
+            "19.0": -1.0,
+            "20.0": -1.0,
+            "21.0": -1.0,
+            "22.0": 0.0,
+            "23.0": -1.0
+        }
+    },
+    "topics": {
+        "topics": [
+            {
+                "title": "Precio percibido alto y \u201csobrevalorado\u201d",
+                "detail": "Numerosos comentarios asocian a la marca con precios por encima del promedio (bol\u00f3n $3.5\u2013$5, jugos \u201ccaros\u201d) y relaci\u00f3n porci\u00f3n\u2013sabor discutible.",
+                "challenge": "Recalibrar ingenier\u00eda de men\u00fas y combos de valor; comunicar propuesta de valor (calidad, higiene, procesos); ofrecer escalas de precio/porci\u00f3n y promos sin erosionar margen."
+            },
+            {
+                "title": "Calidad y consistencia del producto",
+                "detail": "Opiniones polarizadas: \u201cnormalito\u201d, \u201cfr\u00edo\u201d, \u201cseco\u201d, \u201csopudo\u201d, \u201cindustrializado\u201d; cr\u00edticas al queso, grasa/margarina y exceso de l\u00e1cteos; al mismo tiempo, muchos elogios al chicharr\u00f3n y al bol\u00f3n mixto.",
+                "challenge": "Refuerzo de estandarizaci\u00f3n y control sensorial por sucursal; revisi\u00f3n de formulaciones (grasa/quesos), control de temperatura/tiempos de pase, catas ciegas y pilotos de mejora."
+            },
+            {
+                "title": "Medios de pago limitados (no aceptan tarjeta)",
+                "detail": "El no aceptar tarjetas/datafast aparece de forma insistente como fricci\u00f3n clave y s\u00edmbolo de \u201cquedarse en los 90s\u201d.",
+                "challenge": "Implementar POS, QR y billeteras; negociar tasas; comunicar por qu\u00e9/desde cu\u00e1ndo y medir impacto en conversi\u00f3n y ticket promedio."
+            },
+            {
+                "title": "Experiencia de servicio y modelo de autoservicio",
+                "detail": "Debate por recoger bandejas, filas, aire acondicionado y atenci\u00f3n. Parte del p\u00fablico no entiende el modelo y lo percibe como falta de servicio.",
+                "challenge": "Se\u00f1alizaci\u00f3n clara del modelo, mejoras en confort (clima/colas), entrenamiento de sala y speed-of-service; micro-mejoras que hagan tangible el \u201cpor qu\u00e9 vale lo que vale\u201d."
+            },
+            {
+                "title": "Delivery y m\u00ednimos de pedido",
+                "detail": "Cr\u00edticas a m\u00ednimos altos (p. ej. $17) y percepci\u00f3n de costo de env\u00edo elevado.",
+                "challenge": "Estrategia omnicanal con dark kitchens/micro-sat\u00e9lites; franjas horarias con menor m\u00ednimo, alianzas con apps y tarifas claras."
+            },
+            {
+                "title": "Polarizaci\u00f3n y debate social (clasismo/\u201cresentimiento\u201d)",
+                "detail": "La marca cataliza discusiones de clase y \u2018ani\u00f1amiento\u2019; hay \u201clovers\u201d y \u201chaters\u201d muy vocales.",
+                "challenge": "Social listening activo, gu\u00edas de respuesta y vocer\u00eda; campa\u00f1as que despoliticen el consumo y pongan foco en el equipo, proveedores y comunidad."
+            },
+            {
+                "title": "\u201cP\u00e9rdida de esencia\u201d y autenticidad",
+                "detail": "Parte del p\u00fablico siente que el crecimiento \u201cindustrializ\u00f3\u201d el sabor y alej \u00f3 la saz\u00f3n de barrio.",
+                "challenge": "Rescatar identidad: ediciones limitadas regionales, colaboraciones con huecas, relatos de origen y procesos artesanales visibles (open kitchen tours)."
+            },
+            {
+                "title": "Comparaci\u00f3n constante con competidores",
+                "detail": "Citan alternativas (Amorfino, Rey Bol\u00f3n, Boloncity, Mytia, Verde y Caf\u00e9, etc.) como \u201cm\u00e1s ricos y baratos\u201d.",
+                "challenge": "Benchmarkeo sistem\u00e1tico, diferenciar atributos (limpieza, consistencia, amplitud de oferta), y competir con innovaci\u00f3n de producto y packs de valor."
+            },
+            {
+                "title": "Precios de extras y percepci\u00f3n de \u2018cobros adicionales\u2019",
+                "detail": "Malestar por \u00edtems como huevo frito a $1 y bebidas \u201ccaras\u201d (ej. jugo de naranja).",
+                "challenge": "Revisar pricing psicol \u00f3gico de add-ons, bundles/combos y transparencia de costos; comunicar gramajes y calidad de insumos."
+            },
+            {
+                "title": "Producto estrella y adjuntos (tigrillo, aj\u00ed, jugos)",
+                "detail": "El tigrillo divide opiniones; el aj\u00ed y el jugo de naranja son citados como lo mejor por varios usuarios.",
+                "challenge": "Optimizar tigrillo (textura/saz\u00f3n) y ofrecer variedad de aj\u00edes; estandarizar jugos premium; pruebas con clientes frecuentes."
+            },
+            {
+                "title": "Variabilidad entre locales",
+                "detail": "Se reportan experiencias distintas por sucursal (temperatura, saz\u00f3n, servicio).",
+                "challenge": "Auditor\u00edas cruzadas, KPIs por local, mystery shoppers y formaci\u00f3n continua; compartir mejores pr\u00e1cticas de las sucursales top."
+            },
+            {
+                "title": "Rumores y desinformaci\u00f3n",
+                "detail": "Circulan mitos (p. ej. supuestas ventas del negocio) y exageraciones de precios.",
+                "challenge": "Centro de verdad: FAQs p\u00fablicas, aclaraciones proactivas y vocer\u00eda \u00fanica; alianzas con prensa local para notas explicativas."
+            },
+            {
+                "title": "Segmentaci\u00f3n y accesibilidad",
+                "detail": "Percepci\u00f3n de marca \u201caspiracional/ani\u00f1ada\u201d frente a huecas populares; algunos clientes alternan entre ambos mundos.",
+                "challenge": "Definir subformatos (Express/Barrio) con tickets m\u00e1s bajos; programas de fidelidad, happy hours y alianzas corporativas sin diluir la marca."
+            },
+            {
+                "title": "Oportunidad de expansi\u00f3n",
+                "detail": "Alta demanda por presencia en Sierra (Quito/Cuenca) e incluso exterior; es \u201cparada obligada\u201d para viajeros.",
+                "challenge": "Modelo de expansi\u00f3n (franquicia/propios/dark kitchens) con salvaguardas de calidad y supply; estudio de plazas y pilotos."
+            },
+            {
+                "title": "Higiene y marca-empleador",
+                "detail": "Elogios a cocinas \u201ccomo quir\u00f3fanos\u201d y orgullo por el empleo generado.",
+                "challenge": "Certificaciones visibles (BPM/ISO), contenido de \u201cdetr\u00e1s de cocina\u201d y campa\u00f1as de employer branding para atraer y retener talento."
+            },
+            {
+                "title": "Aprovechamiento de la viralidad",
+                "detail": "La conversaci\u00f3n masiva gener\u00f3 \u201cpublicidad gratis\u201d pero tambi\u00e9n ruido.",
+                "challenge": "Activaciones de tiempo real (ofertas, limited drops, retos), escuchando insights y sin avivar pol\u00e9micas negativas."
+            },
+            {
+                "title": "Transparencia nutricional y opciones \u2018mejor balance\u2019",
+                "detail": "Preocupaciones por grasa/margarina y l\u00e1cteos.",
+                "challenge": "Fichas nutricionales, cambios de insumos (manteca/aceites mejores), opciones con menos grasa/sin lactosa y comunicaci\u00f3n clara."
+            }
+        ],
+        "conclusion": "El mayor reto para la marca es alinear precio, calidad percibida y experiencia, reduciendo fricciones (pagos, delivery) y estandarizando sabor/servicio entre locales. En paralelo, debe gestionar la conversaci\u00f3n polarizada con escucha activa y contenidos que refuercen autenticidad, higiene y aporte social; innovar en men\u00fa y formatos para responder a la competencia y abrir nuevas plazas sin perder esencia."
+    },
+    "sentiment_analysis": {
+        "overall_sentiment": "Mixto/Polarizado",
+        "sentiment_breakdown": {
+            "Positivo": 42,
+            "Negativo": 37,
+            "Neutro/Mixto": 21
+        },
+        "key_themes_and_sentiments": {
+            "Precio/Valor": "Mayormente negativo (percepci\u00f3n de caro/sobrevalorado; comparaciones con bolones de $1\u2013$1.50 y combos econ\u00f3micos). Una minor\u00eda lo justifica por limpieza, servicio y consistencia.",
+            "Sabor/Calidad (bol\u00f3n)": "Polarizado. De \u201cnormalito/sobrevalorado\u201d a \u201cdelicioso\u201d. Quejas recurrentes: seco, fr\u00edo, sabor a margarina, perdi\u00f3 saz\u00f3n con la expansi\u00f3n. Elogios al bol\u00f3n mixto de maduro y al chicharr\u00f3n.",
+            "Tigrillo": "Polarizado a negativo suave. Varios lo califican de \u201csopudo/ins\u00edpido\u201d; otros lo consideran el mejor/\u201cde exportaci\u00f3n\u201d.",
+            "Servicio/Higiene/Experiencia en local": "Mayormente positivo. Frecuentes menciones a limpieza tipo \u201cquir\u00f3fano\u201d, buen ambiente y atenci\u00f3n. Algunas cr\u00edticas: falta de A/C en ciertos locales.",
+            "M\u00e9todos de pago (tarjetas/efectivo)": "Negativo. Reiteradas quejas por no aceptar tarjetas y por pol\u00edtica \u201ccash-only\u201d.",
+            "Entrega a domicilio (m\u00ednimos/costos)": "Negativo. Menciones a m\u00ednimo de $17 y percepci\u00f3n de costos de delivery altos.",
+            "Porciones y relaci\u00f3n porci\u00f3n-precio": "Mixto. Algunos perciben porci\u00f3n peque\u00f1a vs. precio; otros reportan quedar satisfechos.",
+            "Marca/Historia de emprendimiento": "Muy positivo. Amplia admiraci\u00f3n por el caso de \u00e9xito, generaci\u00f3n de empleo y crecimiento desde cero.",
+            "Comparaciones con competidores (Amorfino, Rey Bol\u00f3n, Mono Bol\u00f3n, mercados, etc.)": "Neutro/Competitivo. Alto volumen de comparaciones; varios prefieren alternativas por precio/sabor, otros mantienen lealtad a Tere.",
+            "Aj\u00ed/Jugos": "Mixto a positivo. El aj\u00ed es amado por muchos y criticado por otros (\u201csabe a tomate de \u00e1rbol\u201d). El jugo de naranja/mandarina recibe elogios.",
+            "Consistencia (calidad en el tiempo y entre locales)": "Negativo. Percepci\u00f3n de \u201cindustrializaci\u00f3n\u201d y p\u00e9rdida de saz\u00f3n; variabilidad entre locales.",
+            "Clase/identidad/\u201csufridores vs. ani\u00f1ados\u201d": "Polarizado. Conversaci\u00f3n contaminada por etiquetas clasistas; el gusto por Tere se asocia (err\u00f3neamente) con estatus.",
+            "Expansi\u00f3n geogr\u00e1fica (Sierra/Exterior)": "Oportunidad detectada. Demanda expl\u00edcita por sucursales en Quito, Cuenca e incluso fuera del pa\u00eds."
+        },
+        "actionable_insights": [
+            "Habilitar pagos con tarjeta y medios digitales (QR, billeteras) para reducir fricci\u00f3n y volumen de quejas inmediatas.",
+            "Lanzar combos de valor (bol\u00f3n + bebida) y opciones \u201centry price\u201d para anclar percepci\u00f3n de precio sin diluir la marca.",
+            "Estandarizar y auditar recetas/procesos para atacar comentarios de \u201cseco/fr\u00edo/margarina/industrializado\u201d (control de grasas, temperatura y tiempos).",
+            "Comunicar valor: limpieza, cadena de suministro, costos de operaci\u00f3n y salarios/beneficios para explicar la estructura de precios sin caer en defensiva.",
+            "Optimizar delivery: bajar m\u00ednimo de pedido por zonas/horarios, empaques t\u00e9rmicos y transparencia de tarifas.",
+            "Producto: ofrecer variantes de humedad (ej. \u201cjugoso con jugo de bistec\u201d como extra) y texturas en tigrillo (menos \u201csopudo\u201d).",
+            "Gestionar social listening siempre-activo: monitorear picos, mapear detractores/abogados, responder con empat\u00eda y data (calidad, procesos, certificaciones).",
+            "Activar campa\u00f1as \u201cprueba a ciegas\u201d e influencer tastings comparativos para reposicionar sabor y neutralizar el sesgo de \u201csobrevalorado\u201d.",
+            "Establecer programa de lealtad (sellos/puntos) y beneficios por pago digital para incentivar repetici\u00f3n.",
+            "Estandarizar porciones y comunicar gramajes/fotos reales para evitar acusaciones de \u201cfototrampa\u201d.",
+            "Envasar y vender el aj\u00ed (on/offline) y destacar su preparaci\u00f3n para capitalizar su popularidad.",
+            "Pilotos pop-up en Quito/Cuenca (fines de semana) para medir tracci\u00f3n antes de abrir locales permanentes.",
+            "Publicar SLA de atenci\u00f3n/limpieza y auditor\u00edas de calidad (tercero independiente) para reforzar confianza."
+        ],
+        "risks_and_opportunities": {
+            "Riesgos": [
+                "Narrativa de \u201ccaro/sobrevalorado\u201d que erosiona intenci\u00f3n de compra y facilita desv\u00edo a competidores de menor precio.",
+                "Tormentas en redes con sesgo clasista que da\u00f1en la marca empleadora y la reputaci\u00f3n del emprendimiento.",
+                "Fricci\u00f3n por m\u00e9todos de pago (no tarjetas) que genera abandono y amplifica quejas.",
+                "Inconsistencia entre locales (temperatura/saz\u00f3n/porci\u00f3n) que alimenta la cr\u00edtica de \u201cindustrializaci\u00f3n\u201d.",
+                "Delivery con m\u00ednimos altos y mala experiencia de empaque/tiempos que refuerza percepci\u00f3n negativa."
+            ],
+            "Oportunidades": [
+                "Fuerte capital de marca y admiraci\u00f3n por la historia de Tere para storytelling y PR positivo.",
+                "Demanda latente en Sierra y exterior para expansi\u00f3n selectiva o modelos pop-up/licencias.",
+                "Diferenciaci\u00f3n por higiene/estandarizaci\u00f3n como \u201cest\u00e1ndar oro\u201d de boloner\u00edas.",
+                "Line extensions (aj\u00ed embotellado, kits para preparar bol\u00f3n/tigrillo en casa).",
+                "Promos t\u00e1cticas en picos de conversaci\u00f3n para convertir ruido en visitas (cupones contextuales, men\u00fas edici\u00f3n limitada)."
+            ]
+        },
+        "summary": "La conversaci\u00f3n est\u00e1 altamente polarizada: una base amplia valora el sabor (especialmente el bol\u00f3n mixto y el aj\u00ed), la limpieza y la historia de emprendimiento; otra fracci\u00f3n similar critica precio, m\u00e9todos de pago y una supuesta p\u00e9rdida de saz\u00f3n/consistencia con la expansi\u00f3n. El precio y el pago sin tarjetas son los principales detonantes de negatividad; el orgullo por la marca y su aporte laboral, los motores de positividad. Atacar \u201cpuntos de dolor\u201d r\u00e1pidos (aceptar tarjetas, combos de valor, mejoras de consistencia y delivery) y comunicar mejor el valor entregado permitir\u00eda reducir la brecha de percepci\u00f3n. La marca tiene margen para convertir el ruido en crecimiento (lealtad, nuevos mercados y productos) si mantiene est\u00e1ndares, escucha activa y ejecuta mejoras visibles en el corto plazo."
+    },
+    "collocation_analysis": {
+        "top_collocations": [
+            {
+                "collocation": "caf\u00e9 de tere",
+                "frequency": 220,
+                "relevance": "Muy alta"
+            },
+            {
+                "collocation": "bol\u00f3n de tere",
+                "frequency": 200,
+                "relevance": "Muy alta"
+            },
+            {
+                "collocation": "bol\u00f3n mixto",
+                "frequency": 30,
+                "relevance": "Alta"
+            },
+            {
+                "collocation": "do\u00f1a tere",
+                "frequency": 25,
+                "relevance": "Alta"
+            },
+            {
+                "collocation": "tigrillo del caf\u00e9",
+                "frequency": 22,
+                "relevance": "Alta"
+            },
+            {
+                "collocation": "bol\u00f3n de maduro",
+                "frequency": 18,
+                "relevance": "Alta"
+            },
+            {
+                "collocation": "bol\u00f3n de chicharr\u00f3n",
+                "frequency": 15,
+                "relevance": "Media"
+            },
+            {
+                "collocation": "tarjetas de cr\u00e9dito",
+                "frequency": 12,
+                "relevance": "Media"
+            },
+            {
+                "collocation": "ewan mcgregor",
+                "frequency": 11,
+                "relevance": "Media"
+            },
+            {
+                "collocation": "jugo de naranja",
+                "frequency": 10,
+                "relevance": "Media"
+            }
+        ],
+        "analysis": "Metodolog\u00eda resumida: normalic\u00e9 el texto a min\u00fasculas, unifiqu\u00e9 tildes (caf\u00e9/cafe, bol\u00f3n/bolon), elimin\u00e9 URLs, menciones, RT y signos de puntuaci\u00f3n, y cont\u00e9 n-gramas contiguos (bi- y trigramas) en espa\u00f1ol. Agrup\u00e9 variantes ortogr\u00e1ficas equivalentes bajo una misma forma can\u00f3nica. Resultados: el discurso se concentra abrumadoramente en la marca/lugar \u201ccaf\u00e9 de tere\u201d y su producto \u201cbol\u00f3n de tere\u201d. Subtemas relevantes: tipos/preferencias del plato (bol\u00f3n mixto; ingredientes como maduro y chicharr\u00f3n), comparativas con otros platos de la carta (tigrillo), medios de pago (tarjetas de cr\u00e9dito) y acompa\u00f1antes (jugo de naranja). Apariciones de \u201cewan mcgregor\u201d reflejan un episodio coyuntural asociado a la tendencia. Estas colocaciones capturan tanto el t\u00f3pico central (marca y producto) como los ejes de debate (precio/forma de pago, variaciones del plato)."
+    },
+    "entity_detection": {
+        "relevant_entities": [
+            {
+                "entity": "Caf\u00e9 de Tere",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Alta"
+            },
+            {
+                "entity": "Bol\u00f3n de Tere",
+                "type": "Producto",
+                "relevance": "Alta"
+            },
+            {
+                "entity": "Teresa Castro Mendoza",
+                "type": "Persona",
+                "relevance": "Alta"
+            },
+            {
+                "entity": "Guayaquil (GYE)",
+                "type": "Lugar",
+                "relevance": "Alta"
+            },
+            {
+                "entity": "Ecuador",
+                "type": "Lugar",
+                "relevance": "Alta"
+            },
+            {
+                "entity": "Ewan McGregor",
+                "type": "Persona",
+                "relevance": "Media"
+            },
+            {
+                "entity": "El Universo",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Media"
+            },
+            {
+                "entity": "CONAIE",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Media"
+            },
+            {
+                "entity": "MasterChefEcuador",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Sweet & Coffee",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Naturissimo",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Amorfino Caf\u00e9",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Rey Bol\u00f3n",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Boloncity",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Aloha Caf\u00e9",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Cyrano",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Caf\u00e9 Junior",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Juan Tonga",
+                "type": "Organizaci\u00f3n",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Cristo del Consuelo",
+                "type": "Lugar",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Sauces (mercado/barrio)",
+                "type": "Lugar",
+                "relevance": "Media"
+            },
+            {
+                "entity": "La Alborada",
+                "type": "Lugar",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Garzota",
+                "type": "Lugar",
+                "relevance": "Media"
+            },
+            {
+                "entity": "V\u00eda a la Costa",
+                "type": "Lugar",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Quito",
+                "type": "Lugar",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Zaruma",
+                "type": "Lugar",
+                "relevance": "Baja"
+            },
+            {
+                "entity": "Esmeraldas",
+                "type": "Lugar",
+                "relevance": "Baja"
+            },
+            {
+                "entity": "Portoviejo",
+                "type": "Lugar",
+                "relevance": "Baja"
+            },
+            {
+                "entity": "Rafael Correa",
+                "type": "Persona",
+                "relevance": "Media"
+            },
+            {
+                "entity": "Keanu Reeves",
+                "type": "Persona",
+                "relevance": "Baja"
+            },
+            {
+                "entity": "Obi\u2011Wan Kenobi",
+                "type": "Persona",
+                "relevance": "Baja"
+            },
+            {
+                "entity": "Alberto Dahik",
+                "type": "Persona",
+                "relevance": "Baja"
+            },
+            {
+                "entity": "Steve Jobs",
+                "type": "Persona",
+                "relevance": "Baja"
+            }
+        ],
+        "analysis": "El texto es una agregaci\u00f3n masiva de publicaciones en Twitter centradas en la pol\u00e9mica sobre el Caf\u00e9 de Tere y su producto emblem\u00e1tico, el \u201cBol\u00f3n de Tere\u201d. Las entidades m\u00e1s relevantes son el propio negocio (Caf\u00e9 de Tere), su producto (Bol\u00f3n de Tere) y su fundadora (Teresa Castro Mendoza), adem\u00e1s de la ciudad de Guayaquil y el pa\u00eds Ecuador como contexto geogr\u00e1fico predominante. Aparecen marcas y restaurantes competidores o comparables (Sweet & Coffee, Naturissimo, Amorfino Caf\u00e9, Rey Bol\u00f3n, Boloncity, Aloha Caf\u00e9, Cyrano, Caf\u00e9 Junior, Juan Tonga) usados para contrastar calidad/precio. Medios y organizaciones como El Universo (que deton\u00f3 la conversaci\u00f3n con un reportaje) y la CONAIE se mencionan en el marco del debate social. Figuras p\u00fablicas como Ewan McGregor (por su visita a GYE), Rafael Correa y referencias culturales (Obi\u2011Wan Kenobi, Keanu Reeves, Steve Jobs, Alberto Dahik) aparecen tangencialmente. Lugares espec\u00edficos de Guayaquil (Cristo del Consuelo, Sauces, La Alborada, Garzota, V\u00eda a la Costa) y Quito refuerzan el contexto local de consumo y preferencia gastron\u00f3mica."
+    }
+}
