@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Polémica en Redes: Bolón de Tere</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            background-color: #ecf0f1;
+            border-radius: 4px;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 0;
+        }
+        .metric-card {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+        .metric-card strong {
+            color: #e74c3c;
+            font-size: 1.2em;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 5px 0;
+            border-bottom: 1px dotted #ccc;
+        }
+        .conclusion {
+            background-color: #2ecc71;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.1em;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dashboard-container">
+    <h1>Dashboard de Análisis de Contenido en Redes Sociales 🐦</h1>
+    
+    <div class="section" id="analysis-section">
+        <h2>📝 Resumen del Análisis Temático</h2>
+        </div>
+    
+    <div class="section" id="metrics-section">
+        <h2>📈 Métricas Descriptivas de Publicaciones</h2>
+        <div class="grid-3" id="metrics-cards">
+            </div>
+    </div>
+
+    <div class="section" id="entities-section">
+        <h2>👤 Lugares, Personas y Marcas Mencionadas</h2>
+        <div class="grid-3" id="entities-content">
+            </div>
+    </div>
+    
+    <hr>
+    
+    <div class="conclusion">
+        <p><strong>Conclusión Clave:</strong> La conversación en Twitter se centra en la **polémica del "Bolón de Tere"**, contrastando la calidad y el precio de este producto con otros competidores en **Guayaquil, Ecuador**. Las menciones de medios (El Universo) y figuras públicas (Ewan McGregor, Teresa Castro Mendoza) impulsaron el debate social.</p>
+    </div>
+
+</div>
+
+<script>
+    // Asumiendo que el JSON se carga desde un archivo 'result.json' accesible
+    // Para esta demostración, el contenido del JSON se inserta directamente como una variable.
+    // **Nota:** En una implementación real, usarías 'fetch()' para cargar el archivo.
+    const insightsData = {
+        "describe_matrix": {
+            "count": {
+                "favorite_count": 1198.0,
+                "id": 1199.0,
+                "retweet_count": 1198.0,
+                "user.followers_count": 1198.0,
+                "user.friends_count": 1198.0
+            },
+            "mean": {
+                "favorite_count": 12.20,
+                "id": 1.1909e+18,
+                "retweet_count": 33.93,
+                "user.followers_count": 5046.37,
+                "user.friends_count": 1021.63
+            },
+            "std": {
+                "favorite_count": 104.53,
+                "id": 3.44e+16,
+                "retweet_count": 815.06,
+                "user.followers_count": 72793.24,
+                "user.friends_count": 6446.56
+            }
+        },
+        "entities": [
+            { "entity": "Café de Tere", "type": "Organización/Negocio", "relevance": "Alta" },
+            { "entity": "Bolón de Tere", "type": "Producto", "relevance": "Alta" },
+            { "entity": "Teresa Castro Mendoza", "type": "Persona", "relevance": "Alta" },
+            { "entity": "Guayaquil", "type": "Lugar", "relevance": "Alta" },
+            { "entity": "Ecuador", "type": "Lugar", "relevance": "Alta" },
+            { "entity": "Sweet & Coffee", "type": "Organización/Negocio", "relevance": "Media" },
+            { "entity": "Naturissimo", "type": "Organización/Negocio", "relevance": "Media" },
+            { "entity": "El Universo", "type": "Medio", "relevance": "Media" },
+            { "entity": "CONAIE", "type": "Organización", "relevance": "Baja" },
+            { "entity": "Ewan McGregor", "type": "Persona", "relevance": "Baja" }
+        ],
+        "analysis": "El texto es una agregación masiva de publicaciones en Twitter centradas en la polémica sobre el Café de Tere y su producto emblemático, el “Bolón de Tere”. Las entidades más relevantes son el propio negocio (Café de Tere), su producto (Bolón de Tere) y su fundadora (Teresa Castro Mendoza), además de la ciudad de Guayaquil y el país Ecuador como contexto geográfico predominante. Aparecen marcas y restaurantes competidores o comparables (Sweet & Coffee, Naturissimo, Amorfino Café, Rey Bolón, Boloncity, Aloha Café, Cyrano, Café Junior, Juan Tonga) usados para contrastar calidad/precio. Medios y organizaciones como El Universo (que detonó la conversación con un reportaje) y la CONAIE se mencionan en el marco del debate social. Figuras públicas como Ewan McGregor (por su visita a GYE),..."
+    };
+
+    function generateDashboard(data) {
+        // 1. Sección de Análisis
+        const analysisSection = document.getElementById('analysis-section');
+        const analysisParagraph = document.createElement('p');
+        analysisParagraph.textContent = data.analysis;
+        analysisSection.appendChild(analysisParagraph);
+
+        // 2. Sección de Métricas
+        const metricsContainer = document.getElementById('metrics-cards');
+        const metrics = data.describe_matrix.mean;
+        const totalCount = data.describe_matrix.count.id; // Total de publicaciones
+
+        // Mapeo de nombres de métricas para mejor visualización
+        const metricLabels = {
+            'favorite_count': 'Favs Promedio',
+            'retweet_count': 'Retweets Promedio',
+            'user.followers_count': 'Seguidores Promedio del Autor',
+            'user.friends_count': 'Amigos/Siguiendo Promedio del Autor'
+        };
+
+        // Tarjeta de total de publicaciones
+        metricsContainer.innerHTML += `
+            <div class="metric-card">
+                <strong>${Math.round(totalCount).toLocaleString('es')}</strong>
+                <p>Total de Publicaciones Analizadas</p>
+            </div>
+        `;
+
+        for (const key in metrics) {
+            if (metricLabels[key]) {
+                const card = document.createElement('div');
+                card.classList.add('metric-card');
+                const value = parseFloat(metrics[key]);
+                // Mostrar solo 2 decimales y usar formato de número local
+                card.innerHTML = `
+                    <strong>${value.toFixed(2).toLocaleString('es')}</strong>
+                    <p>${metricLabels[key]}</p>
+                `;
+                metricsContainer.appendChild(card);
+            }
+        }
+        
+        // 3. Sección de Entidades
+        const entitiesContainer = document.getElementById('entities-content');
+        
+        // Crear listas para diferentes tipos de relevancia (ejemplo simple)
+        const relevanceMap = { 'Alta': [], 'Media': [], 'Baja': [] };
+        data.entities.forEach(entity => {
+            if (relevanceMap[entity.relevance]) {
+                relevanceMap[entity.relevance].push(entity);
+            }
+        });
+        
+        // Generar listas HTML para cada grupo de relevancia
+        for (const relevance in relevanceMap) {
+            const entitiesList = relevanceMap[relevance];
+            if (entitiesList.length > 0) {
+                const listDiv = document.createElement('div');
+                listDiv.innerHTML = `<h3>Relevancia ${relevance} (${entitiesList.length})</h3>`;
+                const ul = document.createElement('ul');
+                
+                entitiesList.forEach(entity => {
+                    ul.innerHTML += `<li>**${entity.entity}** (${entity.type})</li>`;
+                });
+                
+                listDiv.appendChild(ul);
+                entitiesContainer.appendChild(listDiv);
+            }
+        }
+
+    }
+
+    // Inicializar el dashboard al cargar la página
+    document.addEventListener('DOMContentLoaded', () => {
+        generateDashboard(insightsData);
+    });
+</script>
+
+</body>
+</html>
